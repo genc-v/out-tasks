@@ -1,0 +1,22 @@
+.box {
+  width: 23.5rem;
+  display: flex;
+  align-items: center;
+  margin: 1.5rem;
+}
+
+.circle {
+  border-radius: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.534);
+  min-width: 6.4rem;
+  aspect-ratio: 1/1;
+  margin-right: 1rem;
+}
+
+.boxText h1 {
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+}
+.boxText p {
+  font-size: 0.9rem;
+}

@@ -1,0 +1,19 @@
+.boxWrap {
+  width: 50%;
+  font-size: 2rem;
+}
+
+.box {
+  border: 1px solid rgba(0, 0, 0, 0.089);
+  padding: 2rem;
+  border-radius: 1.8rem;
+  margin: 2rem 0;
+  overflow: hidden;
+}
+
+.tease {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

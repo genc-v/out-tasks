@@ -1,0 +1,26 @@
+div {
+  width: 100%;
+}
+
+.box {
+  padding: 1.5rem;
+  /* border-radius: 1.8rem; */
+  overflow: hidden;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.155);
+}
+
+.tease {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.smallBox div {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,45 @@
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+  /* aspect-ratio: 1/1; */
+  width: 31rem;
+  border: 1px solid rgba(128, 128, 128, 0.288);
+  border-radius: 4.5%;
+  padding: 2.5rem;
+  justify-content: space-between;
+}
+
+.cardName {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.cardVersion p {
+  font-size: 1.2rem;
+}
+
+.cardName div {
+  padding: 0.3rem 2.25rem 0.5rem 2.25rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.cardText {
+  color: rgba(128, 128, 128, 0.466);
+  font-size: 1.25rem;
+  flex: 2;
+}
+.cardName p {
+  margin-left: 1rem;
+}
+
+button {
+  margin-top: 2rem;
+  border-radius: 50rem;
+  background-color: rgba(220, 220, 220, 0);
+  height: 3.8rem;
+  width: 15rem;
+  color: rgba(22, 156, 209, 0.781);
+  border: 1px solid rgba(22, 156, 209, 0.781);
+}

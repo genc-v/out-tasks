@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f2eded80;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collapsed,
+.expand,
+.showLine,
+.hideLine,
+.content {
+  transition: all 0.5s cubic-bezier(0.68, 0.57, 0.22, 1);
+}
+
+.collapsed {
+  transform: rotate(90deg);
+}
+
+.expand {
+  font-size: 2rem;
+}
+
+.showLine,
+.hideLine {
+  height: 1px;
+}
+
+.showLine {
+  margin: 1.2rem auto;
+  width: 99%;
+  background-color: rgba(0, 0, 0, 0.155);
+}
+
+.hideLine {
+  margin: 0 auto;
+  width: 0%;
+}
+
+.content {
+  position: relative;
+  color: rgba(255, 0, 0, 0);
+  max-height: 0rem;
+}
+
+.show {
+  /* display: block; */
+  max-height: 80rem;
+  transition: all 0.5s cubic-bezier(1, 0.01, 0.44, 0.52);
+}
+
+.react-tabs {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.react-tabs__tab-list {
+  /* border-bottom: 1px none; */
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.react-tabs__tab {
+  margin-bottom: 2rem;
+  display: inline-block;
+  list-style: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.react-tabs__tab::before {
+  width: 100%;
+  height: 1px;
+  background-color: red;
+}
+
+@keyframes try {
+  from {
+    border-bottom: 1px solid #0c6ce900;
+  }
+  to {
+    border-bottom: 1px solid #0c6ce9;
+  }
+}
+
+.react-tabs__tab--selected {
+  color: black;
+  animation-name: try;
+  animation-duration: 0.5s;
+  border-bottom: 1px solid #0c6ce9;
+}
+
+@media only screen and (max-width: 1338px) {
+  html {
+    font-size: 50%;
+  }
+  svg {
+    transform: scale(0.7);
+  }
+  .boxWrap {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 952px) {
+  html {
+    font-size: 45%;
+  }
+  svg {
+    transform: scale(0.6);
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 30%;
+  }
+  svg {
+    transform: scale(0.5);
+  }
+}
